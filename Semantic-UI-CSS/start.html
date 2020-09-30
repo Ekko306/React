@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="semantic.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="semantic.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('.ui.accordion').accordion({duration: 'click'});
+
+        });
+        function show() {
+            console.log(123)
+            $('.ui.page.dimmer').dimmer('toggle');
+        }
+    </script>
+</head>
+<body>
+<div onclick="show()">你好</div>
+<div class="ui page dimmer">
+</div>
+
+<div class="ui styled accordion">
+    <div class="ui styled accordion"></div>
+    <div class="title">
+        <i class="dropdown icon"></i>
+        核心概念
+    </div>
+    <div class="content">
+        <p>React最基础的核心概念，务必理解清楚</p>
+        <div class="accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                <a href="./使用Effect Hook.html">Hello World</a>
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                JSX简介
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                元素渲染
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                组件 & Props
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                State & 生命周期
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                事件处理
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                条件渲染
+            </div>
+            <div class="content">
+                1
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                列表 & Key
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                表单
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                状态提升
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                组合 vs 继承
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                React哲学
+            </div>
+            <div class="content">
+                1
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <i class="dropdown icon"></i>
+        Hook
+    </div>
+    <div class="content">
+        <p>Welcome to 级别 2</p>
+        <div class="accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Hook简介
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Hook概览
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                使用State Hook
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                使用Effect Hook
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Hook规则
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                自定义Hook
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Hook API索引
+            </div>
+            <div class="content">
+                1
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Hooks FAQ
+            </div>
+            <div class="content">
+                1
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <i class="dropdown icon"></i>
+        高级指引
+    </div>
+    <div class="content">
+        底下是高级指引的内容
+        <div class="accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                无障碍
+            </div>
+            <div class="content">
+                <p>未来可期</p>
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                代码分割
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Context
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                错误边界
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Refs转发
+            </div>
+            <div class="content">
+                <div class="ui link list">
+                    <a class="item">转发refs到DOM组件</a>
+                    <a class="active item">组件库维护者的注意事项</a>
+                    <a class="item">在高阶组件中转发refs</a>
+                    <a class="item">在DevTools中显示自定义名称</a>
+                </div>
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Fragments
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                高阶组件
+            </div>
+            <div class="content">
+                <div class="ui link list">
+                    <a class="item">使用HOC解决横切关注点问题</a>
+                    <a class="active item">不要改变原始组件。使用组合</a>
+                    <a class="item">约定：将不相关的props传递给被包裹的组件</a>
+                    <a class="item">约定：最大化可组性</a>
+                    <a class="item">约定：包装显示名称以便轻松调试</a>
+                    <a class="item">注意事项</a>
+                </div>
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                与第三方库协同
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                深入JSX
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                性能优化
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Portals
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Profiler
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                不使用ES6
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                不使用JSX
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                协调
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Refs & DOM
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Render Props
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                静态类型检查
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                严格模式
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                使用PropTypes类型检查
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                非受控组件
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                使用PropTypes类型检查
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                非受控组件
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Web Component
+            </div>
+            <div class="content">
+                未来可期
+            </div>
+
+        </div>
+    </div>
+
+    <div class="title">
+        <i class="dropdown icon"></i>
+        APIREFERENCE
+    </div>
+    <div class="content">
+        <p>Welcome to 级别 2</p>
+        <div class="accordion">
+            <div class="title">
+                <i class="dropdown icon"></i>
+                React顶层API
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                React.Component
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                ReactDOM
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                ReactDOMServer
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                DOM元素
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                合成元素
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Test Utilties
+            </div>
+            <div class="content">
+                1
+            </div>
+
+            <div class="title">
+                <i class="dropdown icon"></i>
+                Test Render
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                JavaScript环境要求
+            </div>
+            <div class="content">
+                1
+            </div>
+            <div class="title">
+                <i class="dropdown icon"></i>
+                React术语表
+            </div>
+            <div class="content">
+                1
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>
