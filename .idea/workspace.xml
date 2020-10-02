@@ -1,11 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ade392c9-5506-41d0-b04f-07ef945a19e8" name="Default Changelist" comment="" />
+    <list default="true" id="ade392c9-5506-41d0-b04f-07ef945a19e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API REFERENCE/React.Component.html" beforeDir="false" afterPath="$PROJECT_DIR$/API REFERENCE/React.Component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API REFERENCE/React.html" beforeDir="false" afterPath="$PROJECT_DIR$/API REFERENCE/React.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/Hook API索引.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/Hook API索引.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/Hooks FAQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/Hooks FAQ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/Hook概览.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/Hook概览.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/Hook简介.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/Hook简介.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/Hook规则.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/Hook规则.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/使用Effect Hook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/使用Effect Hook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/使用State Hook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/使用State Hook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hook/自定义Hook.html" beforeDir="false" afterPath="$PROJECT_DIR$/Hook/自定义Hook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/Hello World.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/Hello World.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/JSX简介.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/JSX简介.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/React哲学.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/React哲学.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/State &amp; 生命周期.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/State &amp; 生命周期.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/事件处理.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/事件处理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/元素渲染.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/元素渲染.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/列表 &amp; Key.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/列表 &amp; Key.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/条件渲染.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/条件渲染.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/状态提升.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/状态提升.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/组件 &amp; Props.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/组件 &amp; Props.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/组合 vs 继承.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/组合 vs 继承.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/核心概念/表单.html" beforeDir="false" afterPath="$PROJECT_DIR$/核心概念/表单.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Context.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Context.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Portals.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Portals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Profiler.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Profiler.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Refs &amp; DOM.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Refs &amp; DOM.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Refs转发.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Refs转发.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Render Props.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Render Props.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/Web Components.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/Web Components.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/不使用ES6.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/不使用ES6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/不使用JSX.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/不使用JSX.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/与第三方库协同.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/与第三方库协同.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/严格模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/严格模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/代码分割.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/代码分割.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/使用PropTypes类型检查.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/使用PropTypes类型检查.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/协调.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/协调.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/性能优化.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/性能优化.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/无障碍.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/无障碍.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/深入JSX.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/深入JSX.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/错误边界.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/错误边界.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/静态类型检查.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/静态类型检查.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/非受控组件.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/非受控组件.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/高级指引/高阶组件.html" beforeDir="false" afterPath="$PROJECT_DIR$/高级指引/高阶组件.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="React博客" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -13,6 +63,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i3PjVhIljqV3zGbLJS0HaPZFOk" />
   <component name="ProjectViewState">
@@ -23,6 +76,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
@@ -44,6 +98,9 @@
       <workItem from="1601259554653" duration="153000" />
       <workItem from="1601260515924" duration="53000" />
       <workItem from="1601278862696" duration="83000" />
+      <workItem from="1601604147996" duration="3401000" />
+      <workItem from="1601627352026" duration="2905000" />
+      <workItem from="1601646051212" duration="597000" />
     </task>
     <servers />
   </component>
@@ -59,5 +116,17 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="0" y="139" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1601221503895" />
+    <state x="234" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601605167343">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="234" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1601605167343" />
+    <state x="518" y="81" width="543" height="729" key="dock-window-1" timestamp="1601604723802">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="518" y="81" width="543" height="729" key="dock-window-1/0.23.1440.877@0.23.1440.877" timestamp="1601604723802" />
+    <state x="649" y="48" width="722" height="729" key="dock-window-2" timestamp="1601606344958">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="649" y="48" width="722" height="729" key="dock-window-2/0.23.1440.877@0.23.1440.877" timestamp="1601606344958" />
   </component>
 </project>

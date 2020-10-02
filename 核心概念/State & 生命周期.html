@@ -17,7 +17,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
@@ -82,7 +82,7 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
+@media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
@@ -118,7 +118,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -154,7 +154,7 @@ svg[id^="mermaidChart"] { line-height: 1em; }
 mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
-@media print { 
+@media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 
@@ -227,7 +227,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
 .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
 .CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
 .cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
-@media print { 
+@media print {
   .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
 }
 
@@ -1111,8 +1111,631 @@ input {
 
 
 </style>
+    <link rel="stylesheet" href="../Semantic-UI-CSS/semantic.min.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../Semantic-UI-CSS/semantic.min.js"></script>
+    <script>
+        function abc(){
+            $('.ui.sidebar').sidebar('toggle')
+            console.log(123)
+            $('#div').attr('style',"position: fixed; top: 87%; left: 3.5%; z-index: 1;")
+
+        }
+        function bcd(){
+            $('#div').attr('style',"position: fixed; top: 87%; left: 3.5%; z-index: 3;")
+        }
+
+
+        $(document).ready(function () {
+            $('.ui.accordion').accordion({duration: 'click'});
+
+        });
+    </script>
 </head>
 <body class='typora-export'>
+<i  id='div' style="position: fixed; top: 87%; left: 3.5%; z-index: 2000;" onclick="abc()"  class="bars icon large circular inverted teal"></i>
+<div class="ui sidebar inverted vertical menu" style="background: white !important">
+    <div class="ui styled accordion">
+        <div class="ui styled accordion"></div>
+        <div class="active title">
+            <i class="dropdown icon"></i>
+            核心概念
+        </div>
+        <div class="active content">
+            <p>React最基础的核心概念，务必理解清楚</p>
+            <div class="accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/Hello World.html">Hello World</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">最简单React示例</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/列表.html">JSX简介</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">为什么使用JSX</a>
+                        <a class="item">在JSX中嵌入表达式</a>
+                        <a class="item">JSX也是一个表达式</a>
+                        <a class="item">JSX特定属性</a>
+                        <a class="item">使用JSX指定子元素</a>
+                        <a class="item">JSX防止注入工具</a>
+                        <a class="item">JSX表示对象</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/元素渲染.html">元素渲染</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">讲一个元素渲染为DOM</a>
+                        <a class="item">更新已渲染的元素</a>
+                        <a class="item">React只更新它需要的部分</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/组件 & Props.html">组件 & Props</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">函数组件与class组件</a>
+                        <a class="item">渲染组件</a>
+                        <a class="item">组合组件</a>
+                        <a class="item">提取组件</a>
+                        <a class="item">Props的只读性</a>
+                    </div>
+                </div>
+                <div class="active title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/State & 生命周期.html">State & 生命周期</a>
+                </div>
+                <div class="active content">
+                    <div class="ui link list">
+                        <a class="item">将函数组件转换成class组件</a>
+                        <a class="item">向class组件中添加局部的state</a>
+                        <a class="item">将生命周期方法添加到Class中</a>
+                        <a class="item">正确地使用State</a>
+                        <a class="item">数据是向下流动的</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/事件处理.html">事件处理</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">代码形式变化</a>
+                        <a class="item">阻止默认行为变化</a>
+                        <a class="item">事件处理绑定bind的问题</a>
+                        <a class="item">向事件处理程序传递参数</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/条件渲染.html">条件渲染</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">基本概念</a>
+                        <a class="item">元素变量</a>
+                        <a class="item">与运算符</a>
+                        <a class="item">三目运算符</a>
+                        <a class="item">阻止组件渲染</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/列表 & Key.html">列表 & Key</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">渲染多个组件</a>
+                        <a class="item">基础列表组件</a>
+                        <a class="item">Key</a>
+                        <a class="item">用Key提取组件</a>
+                        <a class="item">Key只是在兄弟节点之间必须唯一</a>
+                        <a class="item">在JSX中嵌入map()</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/表单.html">表单</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">受控组件</a>
+                        <a class="item">textarea标签</a>
+                        <a class="item">select标签</a>
+                        <a class="item">文件input标签</a>
+                        <a class="item">处理多个输入</a>
+                        <a class="item">受控输入空值</a>
+                        <a class="item">受控组件的替代品</a>
+                        <a class="item">成熟的解决方案</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/状态提升.html">状态提升</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">添加第二个输入框</a>
+                        <a class="item">编写转换函数</a>
+                        <a class="item">状态提升</a>
+                        <a class="item">学习小结</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../核心概念/组合 vs 继承.html">组合 vs 继承</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">包含关系</a>
+                        <a class="item">特例关系</a>
+                        <a class="item">那么继承呢？</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a style="color: pink" href="../核心概念/React哲学.html">React哲学</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">将设计好的UI划分为组件层级</a>
+                        <a class="item">用React创建一个静态版本</a>
+                        <a class="item">确定UI state的最小（且完整）表示</a>
+                        <a class="item">确定state放置的位置</a>
+                        <a class="item">添加反向数据流</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            Hook
+        </div>
+        <div class="content">
+            <p>Hook 是 React 16.8 的新增特性。它可以让你在不编写 class 的情况下使用 state 以及其他的 React 特性。</p>
+            <div class="accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/Hook简介.html'>Hook简介</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">视频介绍</a>
+                        <a class="item">没有破坏性改动</a>
+                        <a class="item">动机</a>
+                        <a class="item">渐进策略</a>
+                        <a class="item">FAQ</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/Hook概览.html'>Hook概览</a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="ui link list">
+                            <a class="item">State Hook</a>
+                            <a class="item">Effect Hook</a>
+                            <a class="item">Hook使用规则</a>
+                            <a class="item">自定义Hook</a>
+                            <a class="item">其他Hook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/使用State Hook.html'>使用State Hook</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">等价的class示例</a>
+                        <a class="item">Hook和函数组件</a>
+                        <a class="item">Hook是什么</a>
+                        <a class="item">声明State变量</a>
+                        <a class="item">读取State</a>
+                        <a class="item">更新State</a>
+                        <a class="item">总结</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/使用Effect Hook.html'>使用Effect Hook</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">无需清除的effect</a>
+                        <a class="item">需要清除的effect</a>
+                        <a class="item">小结</a>
+                        <a class="item">使用Effect的提示</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/Hook规则.html'>Hook规则</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">只在最顶层使用Hook</a>
+                        <a class="item">只在React函数组件中调用Hook</a>
+                        <a class="item">ESLint插件</a>
+                        <a class="item">说明</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/自定义Hook.html'>自定义Hook</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">提取自定义Hook</a>
+                        <a class="item">使用自定义Hook</a>
+                        <a class="item">useYourImagination()</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/Hook API索引.html'>Hook API索引</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">基础Hook</a>
+                        <a class="item">额外Hook</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../Hook/Hooks FAQ.html' style="color: pink;">Hooks FAQ</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            高级指引
+        </div>
+        <div class="content">
+            一些高级的功能，应用场景少，但是能够灵活使用很有帮助。
+            <div class="accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/无障碍.html' style="color: pink;">无障碍</a>
+                </div>
+                <div class="content">
+                    <p>未来可期</p>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/代码分割.html'>代码分割</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">打包</a>
+                        <a class="item">代码分割</a>
+                        <a class="item">import()</a>
+                        <a class="item">React.lazy</a>
+                        <a class="item">异常捕获边界（Error boundaries）</a>
+                        <a class="item">基于路由的代码分割</a>
+                        <a class="item">命名导出（Named Exports）</a>
+                        <a class="item">额外Hook</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Context.html' style="color: pink;">Context</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/错误边界.html' style="color: pink;">错误边界</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Refs转发.html' >Refs转发</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">转发refs到DOM组件</a>
+                        <a class="item">组件库维护者的注意事项</a>
+                        <a class="item">在高阶组件中转发refs</a>
+                        <a class="item">在DevTools中显示自定义名称</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Fragments.html' >Fragments</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">动机</a>
+                        <a class="item">用法</a>
+                        <a class="item">短语法</a>
+                        <a class="item">带key的Fragments</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/高阶组件.html' >高阶组件</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">使用HOC解决横切关注点问题</a>
+                        <a class="item">不要改变原始组件。使用组合</a>
+                        <a class="item">约定：将不相关的props传递给被包裹的组件</a>
+                        <a class="item">约定：最大化可组性</a>
+                        <a class="item">约定：包装显示名称以便轻松调试</a>
+                        <a class="item">注意事项</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/与第三方库协同.html' style="color: pink;">与第三方库协同</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/深入JSX.html' style="color: pink;">深入JSX</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/性能优化.html' style="color: pink;">性能优化</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Portals.html'>Portals</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">用法</a>
+                        <a class="item">通过Portal进行冒泡</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Profiler.html' >Profiler</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/不使用ES6.html' >不使用ES6</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">声明默认属性</a>
+                        <a class="item">初始化State</a>
+                        <a class="item">自动绑定</a>
+                        <a class="item">Mixins</a>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/不使用JSX.html' style="color: pink;">不使用JSX</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/协调.html' style="color: pink;">协调</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Refs & DOM.html' >Refs & DOM</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">何时使用Refs</a>
+                        <a class="item">勿过度使用Refs</a>
+                        <a class="item">创建Refs</a>
+                        <a class="item">访问Refs</a>
+                        <a class="item">将DOM Refs暴露给父组件</a>
+                        <a class="item">回调Refs</a>
+                        <a class="item">过时API：String类型的Refs</a>
+                        <a class="item">关于回调refs的说明</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Render Props.html' >Render Props</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">使用Render Props来解决横切关注点</a>
+                        <a class="item">使用Props而非render</a>
+                        <a class="item">注意事项</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/静态类型检查.html' style="color: pink;">静态类型检查</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/严格模式.html' style="color: pink;">严格模式</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/使用PropTypes类型检查.html' style="color: pink;">使用PropTypes类型检查</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/非受控组件.html' style="color: pink;">非受控组件</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href='../高级指引/Web Components.html' style="color: pink;">Web Components</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+            </div>
+        </div>
+
+        <div class="title">
+            <i class="dropdown icon"></i>
+            APIREFERENCE
+        </div>
+        <div class="content">
+            <p>整合所有的api，这里用xmind 9脑图的形式归纳清晰的结构，也方便查询复习</p>
+            <div class="accordion">
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/React.html">React</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">组件</a>
+                        <a class="item">创建React元素</a>
+                        <a class="item">Fragments</a>
+                        <a class="item">Refs</a>
+                        <a class="item">Suspense</a>
+                        <a class="item">Hook</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/React.Component.html">React.Component</a>
+                </div>
+                <div class="content">
+                    <div class="ui link list">
+                        <a class="item">挂载</a>
+                        <a class="item">更新</a>
+                        <a class="item">卸载</a>
+                        <a class="item">错误处理</a>
+                        <a class="item">其他APIs</a>
+                        <a class="item">实例属性</a>
+                        <a class="item">class属性</a>
+                    </div>
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/ReactDOM.html" style="color: pink;">ReactDOM</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/ReactDOMServer.html" style="color: pink;">ReactDOMServer</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/DOM元素.html" style="color: pink;">DOM元素</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/合成元素.html" style="color: pink;">合成元素</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/Test Utilties.html" style="color: pink;">Test Utilties</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/Test Render.html" style="color: pink;">Test Render</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/JavaScript环境要求.html" style="color: pink;">JavaScript环境要求</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+                    <a href="../API REFERENCE/React术语表.html" style="color: pink;">React术语表</a>
+                </div>
+                <div class="content">
+                    未来可期
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="pusher" onclick="bcd()">
+
+
+
+
 <div id='write'  class=''><h1><a name="state--生命周期" class="md-header-anchor"></a><span>State &amp; 生命周期</span></h1><p><span>前面已经有了组件的一些基本概念，但是问题是：</span>
 <strong><span>之前我们的组件不能自己更新产生变化，而依赖的是ReactDOM.render()反复渲染根组件</span></strong>
 <span>这个肯定不推荐，并且函数组件不能满足自更新的效果，</span><mark><span>state闪亮登场</span></mark>
@@ -1123,5 +1746,6 @@ input {
 <span>props现在统一到 constructor 中 props可以认为是组件外界传入进来的，然后组件内部也有自己的state，state是私有的组件才能改变</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="jsx"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="jsx"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.287109375px; left: 48.49432373046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>4</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation"><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40.994293212890625px; width: 41px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">constructor</span>(<span class="cm-variable">props</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">super</span>(<span class="cm-variable">props</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">this</span>.<span class="cm-property">state</span> <span class="cm-operator">=</span> { <span class="cm-property">date</span>: <span class="cm-keyword">new</span> <span class="cm-variable">Date</span>() }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 95px;"></div><div class="CodeMirror-gutters" style="height: 95px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 43px;"></div></div></div></div></pre><hr /><h2><a name="将生命周期方法添加到class中" class="md-header-anchor"></a><span>将生命周期方法添加到Class中</span></h2><p><strong><em><span>生命周期</span></em></strong><span>一个功能就是科学的分配资源</span>
 <span>这里的例子是当组件Clock被销毁的时候释放占用的资源</span>
 <span>典型两个生命周期：</span></p><ul><li><span>挂载（mount）：组件第一次被渲染到DOM中的时候</span></li><li><span>卸载（unmount）：当DOM某个组件被删除的时候</span></li></ul><p><span>对我们的Clock，挂载的时候应该声明一个计时器，当卸载的时候应该清除定时器。</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="jsx" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="jsx"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.287109375px; left: 48.49432373046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>35</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40.994293212890625px; width: 41px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// 加入生命周期之后的Clock组件</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">class</span> <span class="cm-def">Clock</span> <span class="cm-keyword">extends</span> <span class="cm-variable">React</span>.<span class="cm-property">Component</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">constructor</span>(<span class="cm-def">props</span>){</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">super</span>(<span class="cm-variable-2">props</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">this</span>.<span class="cm-property">state</span> <span class="cm-operator">=</span> {<span class="cm-property">date</span>: <span class="cm-keyword">new</span> <span class="cm-variable">Date</span>()}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">componentDidMount</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">//这里timeID没存在state里，直接存在this里？ 可能更好？ state只用来保存可变状态？？</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">this</span>.<span class="cm-property">timerID</span> <span class="cm-operator">=</span> <span class="cm-variable">setInterVal</span>( &nbsp; &nbsp; &nbsp; &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>  () <span class="cm-operator">=&gt;</span> <span class="cm-keyword">this</span>.<span class="cm-property">tick</span>(),</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span> &nbsp;<span class="cm-number">1000</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">componentWillUnMount</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">clearinterval</span>(<span class="cm-keyword">this</span>.<span class="cm-property">timerID</span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">tick</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-property">date</span>: <span class="cm-keyword">new</span> <span class="cm-variable">Date</span>()</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>})</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">render</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> (</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span> &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span> &nbsp; &nbsp;<span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span>Hello, world!<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h1</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>It is {<span class="cm-keyword">this</span>.<span class="cm-property">state</span>.<span class="cm-property">date</span>.<span class="cm-property">toLocaleTimeString</span>()}.<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span> &nbsp;<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>)</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">35</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 837px;"></div><div class="CodeMirror-gutters" style="height: 837px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 43px;"></div></div></div></div></pre><hr /><h2><a name="正确地使用state" class="md-header-anchor"></a><span>正确地使用State</span></h2><p><span>关于 </span><mark><span>setState()</span></mark><span> 应该了解三件事：</span></p><h3><a name="不要直接修改state" class="md-header-anchor"></a><span>不要直接修改State</span></h3><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="jsx"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="jsx"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.286865234375px; left: 48.49432373046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>5</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40.994293212890625px; width: 41px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">//直接修改state不会重新渲染组件</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">this</span>.<span class="cm-property">state</span>.<span class="cm-property">comment</span> <span class="cm-operator">=</span> <span class="cm-string">'Hello'</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">//应该用 setState()</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">this</span>.<span class="cm-property">setSttate</span>({<span class="cm-property">comment</span>: <span class="cm-string">'Hello'</span>})</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 117px;"></div><div class="CodeMirror-gutters" style="height: 117px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 43px;"></div></div></div></div></pre><p><span>构造函数是唯一可以给this.state赋值的地方</span></p><h3><a name="state的更新可能是异步的" class="md-header-anchor"></a><span>State的更新可能是异步的</span></h3><p><span>就是this.props 和 this.state可能会异步更新，两个不能一起弄来更新下一个状态，但又有稍难理解的解决方法</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="jsx" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="jsx"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.28662109375px; left: 48.49432373046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>16</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40.994293212890625px; width: 41px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// 这个不行 因为异步更新</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">counter</span>: <span class="cm-keyword">this</span>.<span class="cm-property">state</span>.<span class="cm-property">counter</span> <span class="cm-operator">+</span> <span class="cm-keyword">this</span>.<span class="cm-property">props</span>.<span class="cm-property">increasement</span>,</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">})</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">//解决方法1， setState传入一个函数（这个函数参数state是之前的state，props是当前props）</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">this</span>.<span class="cm-property">setState</span>((<span class="cm-def">state</span>, <span class="cm-def">props</span>) <span class="cm-operator">=&gt;</span> ({</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-property">counter</span>: <span class="cm-variable-2">state</span>.<span class="cm-property">counter</span> <span class="cm-operator">+</span> <span class="cm-variable-2">props</span>.<span class="cm-property">increment</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}))</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">//解决方法2，同方法1，非箭头函数</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">this</span>.<span class="cm-property">setState</span>(<span class="cm-keyword">function</span>(<span class="cm-def">state</span>, <span class="cm-def">props</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">retrun</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">counter</span>: <span class="cm-variable-2">state</span>.<span class="cm-property">counter</span> <span class="cm-operator">+</span> <span class="cm-variable-2">props</span>.<span class="cm-property">increment</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">})</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 423px;"></div><div class="CodeMirror-gutters" style="height: 423px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 43px;"></div></div></div></div></pre><p><mark><span>我是setState传入参数卡了很久想不懂，其实两点：</span></mark></p><ol start='' ><li><span>这个传入函数，就是 this.setState 不是放在一个 onClick函数体里 点一下调用setState吗，传入函数后就是 调用setState 传入的函数参数</span></li><li><span>参数 (state, props)，state是调用setState之前的state，props是调用setState是的props（就是自定义组件的attribute和子组件），这个props可能在自组件情况复杂用得到</span></li></ol><h3><a name="state的更新会被合并" class="md-header-anchor"></a><span>State的更新会被合并</span></h3><p><span>这个</span><em><span>合并</span></em><span>容易误解，就是更新某个state的变量，这个变量会合并到旧的大state（多个变量，并且只是浅合并，只会变改变了的变量，没有变得不变）</span></p><p><em><span>我的合并看标题理解是多个更新合并到一起😂  （可能会有性能这样 但是这个合并非我想的合并）</span></em></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="js" style="break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="js"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.287109375px; left: 48.49432373046875px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>23</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40.994293212890625px; width: 41px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">constructor</span>(<span class="cm-variable">props</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">super</span>(<span class="cm-variable">props</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">this</span>.<span class="cm-property">state</span> <span class="cm-operator">=</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">posts</span>: [],</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-property">comments</span>: []</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">componentDidMount</span>() {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">fetchPosts</span>().<span class="cm-property">then</span>(<span class="cm-def">ressponse</span> <span class="cm-operator">=&gt;</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">12</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">13</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span> &nbsp;<span class="cm-property">posts</span>: <span class="cm-variable">response</span>.<span class="cm-property">posts</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">14</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>})</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  })</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">fetchComments</span>().<span class="cm-property">then</span>(<span class="cm-def">response</span> <span class="cm-operator">=&gt;</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">this</span>.<span class="cm-property">setState</span>({</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span> &nbsp;<span class="cm-property">comments</span>: <span class="cm-variable-2">response</span>.<span class="cm-property">comments</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>})</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  })</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 510px;"></div><div class="CodeMirror-gutters" style="height: 510px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 43px;"></div></div></div></div></pre><hr /><h2><a name="数据是向下流动的" class="md-header-anchor"></a><span>数据是向下流动的</span></h2><p><span>这个意思就是只能父组件向子组件传递数据，不可能反过来，像瀑布一样</span></p><ul><li><span>可能是爷爷传递给爸爸（爸爸这里是props变量，然后传给儿子（name=this.props.FamilyName））</span></li><li><span>也可能只是爸爸单独传送给儿子（爸爸用state变量，传给儿子(name=this.state.FamilyName)）</span></li></ul><p><span>不可能反过来，例子：</span></p><pre spellcheck="false" class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" lang="jsx"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="jsx"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 12.287109375px; left: 48.84942626953125px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 41px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>5</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -40.994293212890625px; width: 41px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">FormattedDate</span> <span class="cm-attribute">date</span>={<span class="cm-keyword">this</span>.<span class="cm-property">state</span>.<span class="cm-property">date</span>} <span class="cm-tag cm-bracket">/&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">function</span> <span class="cm-def">FormattedDate</span>(<span class="cm-def">props</span>) {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 35px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">return</span> <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>It is {<span class="cm-variable">props</span>.<span class="cm-property">date</span>.<span class="cm-property">toLocaleTimeString</span>()}. <span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -40.994293212890625px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt CodeMirror-linenumber-show" style="left: 0px; width: 35px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 139px;"></div><div class="CodeMirror-gutters" style="height: 139px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 43px;"></div></div></div></div></pre><p><span>例子不重要就是 给子组件传值，无关紧要</span></p></div>
+</div>
 </body>
 </html>
